@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>إسم الكتاب</b>
+  <%= @book.name %>
+</p>
+
+<p>
+  <b>الرقم</b>
+  <%= @book.isbn %>
+</p>
+
+<p>
+  <b>وصف الكتاب</b>
+  <%= @book.description %>
+</p>
+
+
+<%= link_to 'تعديل', edit_book_path(@book) %> |
+<%= link_to 'عودة', books_path %>

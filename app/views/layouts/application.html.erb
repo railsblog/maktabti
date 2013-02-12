@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <title>مكتبتي</title>
+  <link rel="stylesheet" href="https://s3.amazonaws.com/mblogassets/bootstrap.css">
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav pull-right">
+          <li class="active"><a href="/books">قائمة الكتب</a></li>
+          <li class="divider"></li>
+          <a class="brand" href="/">مكتبتي</a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <%= yield %>
+  </div>
+
+
+  <footer>
+    <div class="container">
+     تطبيق مكتبتي 2013
+    </div>
+  </footer>
+
+
+</body>
+</html>
